@@ -35,8 +35,11 @@ media()
 
 media = sum(notas) / len(notas)
 
-if media >= 6:
-    print(f"Status: \033[32mAPROVADO\033[m")
+if media >= 7:
+    print(f"{"Status: \033[32mAPROVADO\033[m":=^30}")
+
+elif media >= 6 and media < 7:
+    print(f"{"\033[1;33mRECUPERAÇÃO\033[m":=^30}")
 
 else:
-    print(f"Status: \033[31mREPROVADO\033[m")
+    print(f"{"\033[31mREPROVADO\033[m":=^30}")
